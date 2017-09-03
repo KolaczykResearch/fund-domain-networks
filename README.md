@@ -1,5 +1,5 @@
 # fund-domain-networks
-Sage code for computing Dirichlet fundamental domains and the empirical Frechet mean set for the space of unlabeled networks on n vertices. 
+Sage code for computing Dirichlet fundamental domains for the space of unlabeled networks on n vertices. 
 
 REQUIRED SOFTWARE:
 
@@ -22,7 +22,7 @@ of 10.
 
 RUNTIME:
 
-The main file is 'fund_domain.sage'. Sample Frechet means can be computed using 'sample_frechet_mean.sage'. To get started, change directories to the one containing this file. Enter the command
+The main file is 'fund_domain.sage'. To get started, change directories to the one containing this file. Enter the command
 
 load('fund_domain.sage')
 
@@ -38,11 +38,3 @@ F is a Sage polyhedron object representing a fundamental Dirichlet domain. Refer
 
 http://doc.sagemath.org/html/en/reference/geometry/sage/geometry/polyhedron/constructor.html
 
-To compute the sample Frechet mean of two networks,
-
-load('sample_frechet_mean.sage')
-s1=[1,2,3,4,5,6]
-s2=[4,5,6,3,2,1]
-mu=sample_frechet_mean(s1,s2); mu
-
-The output will be a list of vectors.
